@@ -26,7 +26,6 @@ export const test = base.extend<TestFixtures>({
 
 type TestDefinition = {
   name: string;
-  testDisabled?: boolean;
   definition: () => Promise<void>;
 }
 
