@@ -4,13 +4,13 @@ createTestGroup('Test Group', [
   {
     name: 'First test',
     definition: async () => {
-      page.goto('https://www.bing.com/');
+      await page.goto('https://www.bing.com/');
     }
   }, 
   {
     name: 'Second test',
     definition: async () => {
-      page.goto('https://www.bing.com/chat');
+      await page.goto('https://www.bing.com/chat');
     }
   }
 ]);
