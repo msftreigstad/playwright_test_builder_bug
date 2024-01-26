@@ -8,7 +8,7 @@ export type TestFixtures = {
 };
 
 export const test = base.extend<TestFixtures>({
-  chatTestLauncher: async ({ playwright, browserName }, use, testInfo) => {
+  chatTestLauncher: async ({ playwright, browserName }, use) => {
     await use(async () => {
       const context = await playwright[browserName].launchPersistentContext('', {
         headless: false,
